@@ -34,8 +34,8 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
   return (
     <SectionContainer>
       <article>
-        <div className="  ">
-          <header className="pt-6 ">
+        <div className="">
+          <header className="pt-6">
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
                 <div>
@@ -52,11 +52,11 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </div>
             </div>
           </header>
-          <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8     dark:divide-gray-700">
-            <dl className="pt-6 pb-10    ">
+          <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700">
+            <dl className="pt-6 pb-10">
               <dt className="sr-only">Authors</dt>
               <dd>
-                <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12   ">
+                <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12">
                   {authorDetails.map((author) => (
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
@@ -91,7 +91,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </dd>
             </dl>
 
-            <div className="divide-y divide-gray-200    dark:divide-gray-700">
+            <div className="divide-y divide-gray-200 dark:divide-gray-700">
               {/*
                   Include the blog content
               */}
@@ -99,9 +99,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </div>
 
             <footer>
-              <div className="divide-gray-200 text-sm leading-5 font-medium    dark:divide-gray-700">
+              <div className="divide-gray-200 text-sm leading-5 font-medium dark:divide-gray-700">
                 {tags && (
-                  <div className="py-4 ">
+                  <div className="py-4">
                     <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                       Tags
                     </h2>
@@ -113,7 +113,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   </div>
                 )}
                 {(next || prev) && (
-                  <div className="flex justify-between py-4   ">
+                  <div className="flex justify-between py-4">
                     {prev && prev.path && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
@@ -137,7 +137,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   </div>
                 )}
               </div>
-              <div className="pt-4 ">
+              <div className="pt-4">
                 <Link
                   href={`/${basePath}`}
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
