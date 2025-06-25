@@ -13,7 +13,10 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
+            This page in currently empyt
+            {/* FIXME: Decide whether to remove it completely or write something useful
+              Showcase your projects with a hero image (16 x 9)
+            */}
           </p>
         </div>
         <div className="container py-12">
